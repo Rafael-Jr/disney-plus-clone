@@ -1,7 +1,34 @@
 import React from "react";
+import styled from "styled-components";
+import ImgSlider from "./ImgSlider";
+import Viewers from "./Viewers";
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <Container>
+      <ImgSlider />
+      <Viewers />
+    </Container>
+  );
 }
 
 export default Home;
+
+const Container = styled.main`
+  overflow-x: hidden;
+  min-height: calc(100vh - 4em);
+  padding: 0 calc(3.5vw + 0.4em);
+  position: relative;
+
+  &:before {
+    background: url("/images/home-background.png") center center / cover
+      no-repeat fixed;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+`;
