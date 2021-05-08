@@ -57,7 +57,7 @@ const Background = styled.div`
   top: 0;
   bottom: 0;
   z-index: -1;
-  opacity: 0.8;
+  opacity: 0.7;
 
   img {
     object-fit: fill;
@@ -143,12 +143,12 @@ const GroupWatchButton = styled(AddButton)`
 `;
 
 const SubTitle = styled.div`
-  margin-top: 4em;
+  margin-top: 3em;
   line-height: 1.4px;
   font-size: 1em;
 `;
 
 const Description = styled.div`
-  margin-top: 1.5em;
+  margin-top: 1.2em;
   font-size: 1.2em;
 `;
