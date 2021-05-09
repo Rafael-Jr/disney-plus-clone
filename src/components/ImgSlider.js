@@ -54,6 +54,7 @@ const Carousel = styled(Slider)`
 
   button {
     z-index: 1;
+    opacity: 1;
   }
 `;
 
